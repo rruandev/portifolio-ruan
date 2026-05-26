@@ -463,6 +463,47 @@ body {
   margin-bottom: 0.9rem;
   display: block;
 }
+
+.skill-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.2rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--sk, var(--purple));
+  border-color: rgba(var(--sk-rgb, 139,92,246), 0.25);
+  background: var(--sk-glow, rgba(139,92,246,0.08));
+}
+
+.skill-uses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.skill-uses span {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50px;
+  color: var(--text-dim);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.skill-card:hover .skill-uses span {
+  color: var(--sk, var(--purple-light));
+  border-color: var(--sk-glow, rgba(139,92,246,0.3));
+}
 .skill-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
