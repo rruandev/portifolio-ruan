@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruan Ribeiro Cunha | Dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">rr<span>.</span>dev</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">&lt; Olá, eu sou /&gt;</p>
+      <h1 class="hero-title">Ruan Ribeiro<br /><span>Cunha</span></h1>
+      <p class="hero-sub">Desenvolvedor <span class="typed" id="typed"></span></p>
+      <div class="hero-btns">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Contato</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">dev.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-purple">const</span> <span class="c-blue">ruan</span> = {
+  <span class="c-cyan">nome</span>:   <span class="c-green">"Ruan Ribeiro"</span>,
+  <span class="c-cyan">faz</span>:    <span class="c-green">"sites"</span>,
+  <span class="c-cyan">skills</span>: [
+    <span class="c-green">"HTML"</span>, <span class="c-green">"CSS"</span>,
+    <span class="c-green">"JS"</span>,   <span class="c-green">"Python"</span>
+  ],
+  <span class="c-cyan">status</span>: <span class="c-ok">"disponível ✓"</span>
+}</code></pre>
+      </div>
+    </div>
+
+    <div class="hero-glow"></div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre <span>mim</span></h2>
+      <div class="sobre-grid">
+        <div class="sobre-text fade-in">
+          <p>
+            Sou desenvolvedor e faço sites do zero — desde o design até o código
+            funcionando no ar. Gosto de criar experiências digitais que combinam
+            boa estética com código limpo e eficiente.
+          </p>
+          <p>
+            Trabalho com <strong>HTML</strong>, <strong>CSS</strong>,
+            <strong>JavaScript</strong> e <strong>Python</strong>, construindo
+            projetos reais para pessoas e empresas reais.
+          </p>
+          <div class="sobre-tags">
+            <span>🚀 Sites do zero</span>
+            <span>🎨 Design + Código</span>
+            <span>⚡ Performance</span>
+          </div>
+        </div>
+
+        <div class="sobre-stats">
+          <div class="stat fade-in">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-label">Projetos</span>
+          </div>
+          <div class="stat fade-in">
+            <span class="stat-num" data-target="4">0</span>
+            <span class="stat-label">Tecnologias</span>
+          </div>
+          <div class="stat fade-in">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-label">% Dedicação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Minhas <span>Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Estrutura semântica e acessível</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 90%"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Layouts modernos, animações e responsividade</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 85%"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Interatividade e lógica no front-end</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 80%"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Scripts, automações e back-end</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 75%"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETOS ===== -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Meus <span>Projetos</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-lang html">HTML</span>
+            <div class="project-links">
+              <a href="https://github.com/rruandev/projeto-floricultura" target="_blank" rel="noopener" title="Ver no GitHub">⟨/⟩</a>
+              <a href="https://projeto-floricultura-sigma.vercel.app" target="_blank" rel="noopener" title="Ver ao vivo">↗</a>
+            </div>
+          </div>
+          <h3>Floricultura</h3>
+          <p>Site completo para uma floricultura, com catálogo de produtos e layout atraente.</p>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-lang html">HTML</span>
+            <div class="project-links">
+              <a href="https://github.com/rruandev/portfolio-rafael-rego" target="_blank" rel="noopener" title="Ver no GitHub">⟨/⟩</a>
+              <a href="https://extase-fest-bn48.vercel.app" target="_blank" rel="noopener" title="Ver ao vivo">↗</a>
+            </div>
+          </div>
+          <h3>Portfólio Rafael Rego</h3>
+          <p>Portfólio para Rafael Rego, grande produtor de eventos de Brasília.</p>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-lang html">HTML</span>
+            <div class="project-links">
+              <a href="https://github.com/rruandev/passfest-landing" target="_blank" rel="noopener" title="Ver no GitHub">⟨/⟩</a>
+              <a href="https://passfest-landing.vercel.app" target="_blank" rel="noopener" title="Ver ao vivo">↗</a>
+            </div>
+          </div>
+          <h3>Passfest Landing</h3>
+          <p>Landing page para o Passfest, plataforma de ingressos para festivais.</p>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-lang html">HTML</span>
+            <div class="project-links">
+              <a href="https://github.com/rruandev/performance-app" target="_blank" rel="noopener" title="Ver no GitHub">⟨/⟩</a>
+            </div>
+          </div>
+          <h3>Performance App</h3>
+          <p>Aplicação web focada em performance e otimização de carregamento.</p>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <span class="project-lang python">Python</span>
+            <div class="project-links">
+              <a href="https://github.com/rruandev/PROJETO_RESTAURANTE" target="_blank" rel="noopener" title="Ver no GitHub">⟨/⟩</a>
+            </div>
+          </div>
+          <h3>Projeto Restaurante</h3>
+          <p>Sistema para restaurante desenvolvido em Python com gerenciamento de pedidos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="section section-alt" id="contato">
+    <div class="container contato-container">
+      <h2 class="section-title">Entre em <span>Contato</span></h2>
+      <p class="contato-sub">Tem um projeto em mente? Vamos conversar!</p>
+      <div class="contato-links">
+        <a href="https://github.com/rruandev" target="_blank" rel="noopener" class="contato-card fade-in">
+          <span class="contato-icon">⟨/⟩</span>
+          <span class="contato-name">GitHub</span>
+          <span class="contato-user">@rruandev</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Feito com <span class="heart">♥</span> por <span class="footer-name">Ruan Ribeiro Cunha</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
