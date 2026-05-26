@@ -3,7 +3,7 @@
    ===================================================== */
 
 /* ===== TYPED ANIMATION ===== */
-const words = ['Full-stack', 'Front-end', 'Web Developer'];
+const words = ['Desenvolvedor de Sites', 'Criador de Portfólios', 'Promotor de Eventos'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
