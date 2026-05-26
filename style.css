@@ -551,6 +551,31 @@ body {
 .project-lang.html   { background: rgba(239,68,68,0.12);  color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
 .project-lang.python { background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
 .project-lang.fest   { background: rgba(139,92,246,0.15); color: #c084fc; border: 1px solid rgba(139,92,246,0.3); }
+.project-lang.solar  { background: rgba(234,179,8,0.12);  color: #fbbf24; border: 1px solid rgba(234,179,8,0.25); }
+.project-lang.barber { background: rgba(20,184,166,0.12); color: #2dd4bf; border: 1px solid rgba(20,184,166,0.25); }
+
+.badge-wip {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.em-andamento {
+  opacity: 0.85;
+}
+.em-andamento::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 12px,
+    rgba(139,92,246,0.02) 12px,
+    rgba(139,92,246,0.02) 24px
+  );
+  pointer-events: none;
+}
 
 .project-links {
   display: flex;
