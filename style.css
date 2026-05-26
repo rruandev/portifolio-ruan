@@ -813,7 +813,7 @@ body {
   box-shadow: 0 14px 40px rgba(139, 92, 246, 0.2);
 }
 
-.contato-icon { font-size: 1.8rem; margin-bottom: 0.3rem; }
+.contato-icon { display: flex; align-items: center; justify-content: center; margin-bottom: 0.3rem; width: 26px; height: 26px; }
 .contato-name { font-weight: 700; font-size: 1rem; }
 .contato-user {
   font-family: var(--mono);
