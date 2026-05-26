@@ -3,7 +3,7 @@
    ===================================================== */
 
 /* ===== TYPED ANIMATION ===== */
-const words = ['Fundador de Agência', 'Desenvolvedor de Sites', 'Marketing Digital', 'Promotor de Eventos'];
+const words = ['crio sites que vendem', 'fundador de agência', 'trabalho com eventos', 'baseado em Brasília'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
