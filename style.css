@@ -322,9 +322,53 @@ body {
    ============================================================ */
 .sobre-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 5rem;
+  grid-template-columns: auto 1fr auto;
+  gap: 4rem;
   align-items: center;
+}
+
+/* ===== FOTO ===== */
+.sobre-foto { flex-shrink: 0; }
+
+.foto-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+.foto-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  filter: grayscale(10%);
+  transition: filter var(--transition);
+}
+.foto-img:hover { filter: grayscale(0%); }
+
+.foto-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple), var(--cyan), var(--purple));
+  z-index: 0;
+  animation: spin-ring 6s linear infinite;
+}
+.foto-ring::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--bg);
+}
+
+@keyframes spin-ring {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 .sobre-text p {
@@ -621,10 +665,19 @@ body {
   .sobre-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    justify-items: center;
   }
   .sobre-stats {
     flex-direction: row;
     justify-content: center;
+  }
+  .foto-wrapper {
+    width: 170px;
+    height: 170px;
+  }
+  .foto-img {
+    width: 170px;
+    height: 170px;
   }
 }
 
