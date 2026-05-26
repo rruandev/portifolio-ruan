@@ -469,6 +469,7 @@ body {
   padding: 1.8rem;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 

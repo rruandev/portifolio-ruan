@@ -121,6 +121,15 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 skillFills.forEach(bar => skillObserver.observe(bar));
 
+/* ===== CARDS DE PROJETO CLICÁVEIS ===== */
+document.querySelectorAll('.project-card[data-url]').forEach(card => {
+  card.addEventListener('click', (e) => {
+    // Ignora se o clique foi em um link interno (GitHub ou live)
+    if (e.target.closest('a')) return;
+    window.open(card.dataset.url, '_blank', 'noopener');
+  });
+});
+
 /* ===== CONTADOR ANIMADO (Sobre — stats) ===== */
 function animateCounter(el) {
   const target = parseInt(el.dataset.target, 10);
