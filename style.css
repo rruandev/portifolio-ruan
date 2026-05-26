@@ -907,6 +907,99 @@ body {
   }
 }
 
+/* ============================================================
+   SKILLS — ACCENT POR TECNOLOGIA
+   ============================================================ */
+.skill-card[data-skill="html"] { --sk: #f97316; --sk-glow: rgba(249,115,22,0.18); }
+.skill-card[data-skill="css"]  { --sk: #38bdf8; --sk-glow: rgba(56,189,248,0.18); }
+.skill-card[data-skill="js"]   { --sk: #fbbf24; --sk-glow: rgba(251,191,36,0.18); }
+.skill-card[data-skill="py"]   { --sk: #4ade80; --sk-glow: rgba(74,222,128,0.18); }
+
+.skill-card[data-skill] {
+  border-top: 2px solid var(--sk);
+}
+
+.skill-card[data-skill] .skill-fill {
+  background: linear-gradient(90deg, var(--sk), var(--cyan));
+}
+
+.skill-card[data-skill]:hover {
+  border-color: var(--sk);
+  box-shadow: 0 12px 35px var(--sk-glow);
+}
+
+.skill-card[data-skill] .skill-icon {
+  font-size: 2.6rem;
+  filter: drop-shadow(0 0 8px var(--sk-glow));
+}
+
+.skill-card[data-skill] .skill-pct {
+  color: var(--sk);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* ============================================================
+   PROJECTS — GLOW POR TECNOLOGIA
+   ============================================================ */
+.project-card:has(.project-lang.html):hover {
+  box-shadow: 0 14px 40px rgba(239,68,68,0.2);
+  border-color: rgba(239,68,68,0.4);
+}
+.project-card:has(.project-lang.html)::after {
+  background: linear-gradient(90deg, #ef4444, #f97316);
+}
+
+.project-card:has(.project-lang.python):hover {
+  box-shadow: 0 14px 40px rgba(59,130,246,0.2);
+  border-color: rgba(59,130,246,0.4);
+}
+.project-card:has(.project-lang.python)::after {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+}
+
+.project-card:has(.project-lang.fest):hover {
+  box-shadow: 0 14px 40px rgba(139,92,246,0.3);
+  border-color: rgba(139,92,246,0.55);
+}
+
+.project-card:has(.project-lang.solar):hover {
+  box-shadow: 0 14px 40px rgba(234,179,8,0.2);
+  border-color: rgba(234,179,8,0.4);
+}
+.project-card:has(.project-lang.solar)::after {
+  background: linear-gradient(90deg, #eab308, #f97316);
+}
+
+.project-card:has(.project-lang.barber):hover {
+  box-shadow: 0 14px 40px rgba(20,184,166,0.2);
+  border-color: rgba(20,184,166,0.4);
+}
+.project-card:has(.project-lang.barber)::after {
+  background: linear-gradient(90deg, #14b8a6, #38bdf8);
+}
+
+/* ============================================================
+   EM ANDAMENTO — MELHORADO
+   ============================================================ */
+.em-andamento {
+  border-top: 2px solid rgba(251,191,36,0.4);
+}
+
+.badge-wip {
+  color: #fbbf24;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.2px;
+  animation: pulse-wip 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-wip {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .nav-links.open {
