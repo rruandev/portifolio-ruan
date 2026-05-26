@@ -553,6 +553,7 @@ body {
 .project-lang.fest   { background: rgba(139,92,246,0.15); color: #c084fc; border: 1px solid rgba(139,92,246,0.3); }
 .project-lang.solar  { background: rgba(234,179,8,0.12);  color: #fbbf24; border: 1px solid rgba(234,179,8,0.25); }
 .project-lang.barber { background: rgba(20,184,166,0.12); color: #2dd4bf; border: 1px solid rgba(20,184,166,0.25); }
+.project-lang.agency { background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(236,72,153,0.15)); color: #e879f9; border: 1px solid rgba(168,85,247,0.4); font-weight: 700; }
 
 .badge-wip {
   font-size: 0.72rem;
@@ -977,6 +978,18 @@ body {
 }
 .project-card:has(.project-lang.barber)::after {
   background: linear-gradient(90deg, #14b8a6, #38bdf8);
+}
+
+.project-card:has(.project-lang.agency) {
+  border-color: rgba(168,85,247,0.3);
+  background: linear-gradient(160deg, rgba(139,92,246,0.07) 0%, var(--bg3) 55%);
+}
+.project-card:has(.project-lang.agency):hover {
+  box-shadow: 0 14px 45px rgba(168,85,247,0.3);
+  border-color: rgba(168,85,247,0.6);
+}
+.project-card:has(.project-lang.agency)::after {
+  background: linear-gradient(90deg, #a855f7, #ec4899);
 }
 
 /* ============================================================
